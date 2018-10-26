@@ -3,7 +3,7 @@ class Fruit < ApplicationRecord
     weight * 2.2
   end
 
-  def tax( price )
-    price * 7.5
+  def tax( price, tax_percent)
+    price * 7.5 * tax_percent
   end
 end
